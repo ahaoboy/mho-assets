@@ -25,7 +25,7 @@ build() {
     local target="$1"
     echo "build $target"
 
-    CONFIG_DIR="$target/crash_config"
+    CONFIG_DIR="$target/crash_config/CrashUI"
     mkdir -p "./$CONFIG_DIR"
 
     ei $REPO --name crash --target $target --dir "./$target" --fuzzy
@@ -39,7 +39,7 @@ build() {
     for name in "${ui[@]}"; do
         url="$RELEASE/$name"
         local base="${name%.tar.gz}"
-        ei $url --dir "./$CONFIG_DIR" --alias CrashUI
+        ei $url --dir "./$CONFIG_DIR"
     done
 
     cd "$target"
