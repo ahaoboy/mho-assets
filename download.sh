@@ -84,7 +84,7 @@ compress_single() {
 }
 
 # Mihomo files https://github.com/MetaCubeX/mihomo
-mihomo_tag="v1.19.31"
+mihomo_tag="v1.19.32"
 mihomo_files=(
     "mihomo-windows-amd64-$mihomo_tag.zip"
     "mihomo-linux-amd64-$mihomo_tag.gz"
@@ -100,7 +100,7 @@ for file in "${mihomo_files[@]}"; do
 done
 
 # singbox files https://github.com/SagerNet/sing-box
-singbox_version="1.14.1"
+singbox_version="1.14.2"
 singbox_tag="v$singbox_version"
 singbox_files=(
   "sing-box-$singbox_version-linux-arm64.tar.gz"
