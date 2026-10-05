@@ -166,6 +166,8 @@ yacd_tag="v0.3.8"
 yacd_url="https://github.com/haishanh/yacd/releases/download/$yacd_tag/yacd.tar.xz"
 download "$yacd_url" "yacd.tar.xz"
 
+download "https://github.com/MetaCubeX/mihomo/archive/refs/heads/Alpha.zip" "mihomo-alpha.zip"
+
 # Geo files
 geo_files=(
     "geoip.metadb"
