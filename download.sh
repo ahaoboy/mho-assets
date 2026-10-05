@@ -115,23 +115,23 @@ for file in "${singbox_files[@]}"; do
 done
 
 
-# crash files https://github.com/ahaoboy/crash
-crash_files=(
-    "crash-aarch64-apple-darwin.tar.gz"
-    "crash-aarch64-linux-android.tar.gz"
-    "crash-aarch64-unknown-linux-gnu.tar.gz"
-    "crash-aarch64-unknown-linux-musl.tar.gz"
-    "crash-x86_64-apple-darwin.tar.gz"
-    "crash-x86_64-pc-windows-msvc.zip"
-    "crash-x86_64-pc-windows-gnu.zip"
-    "crash-x86_64-unknown-linux-gnu.tar.gz"
-    "crash-x86_64-unknown-linux-musl.tar.gz"
+# mho files https://github.com/ahaoboy/mho
+mho_files=(
+    "mho-aarch64-apple-darwin.tar.gz"
+    "mho-aarch64-linux-android.tar.gz"
+    "mho-aarch64-unknown-linux-gnu.tar.gz"
+    "mho-aarch64-unknown-linux-musl.tar.gz"
+    "mho-x86_64-apple-darwin.tar.gz"
+    "mho-x86_64-pc-windows-msvc.zip"
+    "mho-x86_64-pc-windows-gnu.zip"
+    "mho-x86_64-unknown-linux-gnu.tar.gz"
+    "mho-x86_64-unknown-linux-musl.tar.gz"
 )
-crash_tag="nightly"
-crash_url="https://github.com/ahaoboy/crash/releases/download/${crash_tag}"
+mho_tag="nightly"
+mho_url="https://github.com/ahaoboy/mho/releases/download/${mho_tag}"
 
-for file in "${crash_files[@]}"; do
-    download "$crash_url/$file" "$file"
+for file in "${mho_files[@]}"; do
+    download "$mho_url/$file" "$file"
 done
 
 clash_files=(
@@ -143,7 +143,7 @@ clash_files=(
 )
 
 for file in "${clash_files[@]}"; do
-    clash_url="https://github.com/juewuy/ShellCrash/raw/refs/heads/dev/bin/clash/$file"
+    clash_url="https://github.com/juewuy/Shellmho/raw/refs/heads/dev/bin/clash/$file"
     download "$clash_url" "$file"
 done
 
@@ -152,9 +152,9 @@ done
 # zashboard_url="https://github.com/Zephyruso/zashboard/releases/download/$zashboard_tag/dist.zip"
 # download "$zashboard_url" "zashboard.zip"
 
-# crash-ui https://github.com/ahaoboy/crash-ui
-crash_ui_url="https://github.com/ahaoboy/crash-ui/releases/latest/download/crash-ui.zip"
-download "$crash_ui_url" "crash-ui.zip"
+# mho-ui https://github.com/ahaoboy/mho-ui
+mho_ui_url="https://github.com/ahaoboy/mho-ui/releases/latest/download/mho-ui.zip"
+download "$mho_ui_url" "mho-ui.zip"
 
 # Metacubexd https://github.com/MetaCubeX/metacubexd
 metacubexd_tag="v1.273.1"
@@ -196,7 +196,7 @@ echo "All downloads and processing completed."
 
 ls -lh .
 
-for tar_file in clash*.tar.gz crash*.tar.gz mihomo*.tar.gz sing-box*.tar.gz; do
+for tar_file in clash*.tar.gz mho*.tar.gz mihomo*.tar.gz sing-box*.tar.gz; do
     [ -e "$tar_file" ] || continue
 
     echo "upx start $tar_file"

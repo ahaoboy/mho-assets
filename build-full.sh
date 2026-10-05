@@ -15,20 +15,20 @@ geo=(
 )
 
 ui=(
-  "crash-ui.tar.gz"
+  "mho-ui.tar.gz"
 )
 
 
-REPO="https://github.com/ahaoboy/crash-assets"
-RELEASE="https://github.com/ahaoboy/crash-assets/releases/download/nightly"
+REPO="https://github.com/ahaoboy/mho-assets"
+RELEASE="https://github.com/ahaoboy/mho-assets/releases/download/nightly"
 build() {
     local target="$1"
     echo "build $target"
 
-    CONFIG_DIR="$target/crash_config/CrashUI"
+    CONFIG_DIR="$target/mho_config/MhoUI"
     mkdir -p "./$CONFIG_DIR"
 
-    ei $REPO --name crash --target $target --dir "./$target" --fuzzy
+    ei $REPO --name mho --target $target --dir "./$target" --fuzzy
     ei $REPO --name mihomo --target $target --alias Mihomo --dir "./$CONFIG_DIR" --fuzzy
 
     for name in "${geo[@]}"; do
@@ -43,7 +43,7 @@ build() {
     done
 
     cd "$target"
-    tar -cJf "../crash-full-${target}.tar.xz" .
+    tar -cJf "../mho-full-${target}.tar.xz" .
     cd ..
     rm -rf "./$target"
 }

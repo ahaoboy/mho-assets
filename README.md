@@ -1,6 +1,6 @@
-https://github.com/ahaoboy/crash
+https://github.com/ahaoboy/mho
 
-https://github.com/ahaoboy/crash-ui
+https://github.com/ahaoboy/mho-ui
 
 https://github.com/MetaCubeX/mihomo
 
@@ -8,42 +8,42 @@ https://github.com/SagerNet/sing-box
 
 https://github.com/MetaCubeX/metacubexd
 
-### crash
+### mho
 
 ```bash
 
-curl -fsSL https://cdn.jsdelivr.net/gh/ahaoboy/crash-assets@main/install.sh | sh -s -- --proxy jsdelivr
+curl -fsSL https://cdn.jsdelivr.net/gh/ahaoboy/mho-assets@main/install.sh | sh -s -- --proxy jsdelivr
 
-curl -fsSL https://raw.githubusercontent.com/ahaoboy/crash-assets@main/install-full.sh | sh -s -- --dir ~/.crash
+curl -fsSL https://raw.githubusercontent.com/ahaoboy/mho-assets@main/install-full.sh | sh -s -- --dir ~/.mho
 
-curl -fsSL https://gh-proxy.com/https://github.com/ahaoboy/crash-assets/blob/main/install.sh | sh -s -- --proxy gh-proxy
+curl -fsSL https://gh-proxy.com/https://github.com/ahaoboy/mho-assets/blob/main/install.sh | sh -s -- --proxy gh-proxy
 
 ```
 
-### crash-full
+### mho-full
 
 **tar needs to support the gz format.**
 
 ```bash
 
-ei ahaoboy/crash-assets --name crash-full --dir ~/.crash
+ei ahaoboy/mho-assets --name mho-full --dir ~/.mho
 
 # Needs to support extracting tar.gz files.
-curl -fsSL https://cdn.jsdelivr.net/gh/ahaoboy/crash-assets@main/install-full.sh | sh -s -- --proxy jsdelivr --dir ~/.crash
+curl -fsSL https://cdn.jsdelivr.net/gh/ahaoboy/mho-assets@main/install-full.sh | sh -s -- --proxy jsdelivr --dir ~/.mho
 
-curl -fsSL https://gh-proxy.com/https://github.com/ahaoboy/crash-assets/blob/main/install-full.sh | sh -s -- --proxy gh-proxy
+curl -fsSL https://gh-proxy.com/https://github.com/ahaoboy/mho-assets/blob/main/install-full.sh | sh -s -- --proxy gh-proxy
 
-ei https://github.com/ahaoboy/crash-assets/blob/main/crash-full-x86_64-pc-windows-msvc.tar.gz
+ei https://github.com/ahaoboy/mho-assets/blob/main/mho-full-x86_64-pc-windows-msvc.tar.gz
 ```
 
 ### router
 ```bash
-ei ahaoboy/crash-assets --name crash-full --proxy jsdelivr --dir /jffs
+ei ahaoboy/mho-assets --name mho-full --proxy jsdelivr --dir /jffs
 ```
 
 
 ### dev
 
 ```bash
-git clone https://github.com/ahaoboy/crash-assets.git --branch dev --depth=1
+git clone https://github.com/ahaoboy/mho-assets.git --branch dev --depth=1
 ```

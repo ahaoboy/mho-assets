@@ -47,10 +47,10 @@ set -e
 # CONFIGURATION - Modify these variables to adapt to your project
 # ============================================================================
 EI_OWNER="ahaoboy"
-EI_REPO="crash-assets"
+EI_REPO="mho-assets"
 EI_TAG="latest"
-EI_BINARY_NAME="crash-full"
-EI_DIR="~/.crash"  # Installation directory (empty = auto-detect based on permissions)
+EI_BINARY_NAME="mho-full"
+EI_DIR="~/.mho"  # Installation directory (empty = auto-detect based on permissions)
 
 # Resource type: "release" (GitHub release) or "file" (GitHub raw file)
 # Default: "release" - downloads from GitHub releases
