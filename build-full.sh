@@ -25,8 +25,9 @@ build() {
     local target="$1"
     echo "build $target"
 
-    CONFIG_DIR="$target/mho_config/MhoUI"
-    mkdir -p "./$CONFIG_DIR"
+    CONFIG_DIR="$target/mho_config"
+    UI_DIR="$target/mho_config/MhoUI"
+    mkdir -p "./$UI_DIR"
 
     ei $REPO --name mho --target $target --dir "./$target" --fuzzy
     ei $REPO --name mihomo --target $target --alias Mihomo --dir "./$CONFIG_DIR" --fuzzy
@@ -39,7 +40,7 @@ build() {
     for name in "${ui[@]}"; do
         url="$RELEASE/$name"
         local base="${name%.tar.gz}"
-        ei $url --dir "./$CONFIG_DIR"
+        ei $url --dir "./$UI_DIR"
     done
 
     cd "$target"
