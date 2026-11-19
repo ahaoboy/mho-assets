@@ -84,7 +84,7 @@ compress_single() {
 }
 
 # Mihomo files https://github.com/MetaCubeX/mihomo
-mihomo_tag="v1.19.33"
+mihomo_tag="v1.19.34"
 mihomo_files=(
     "mihomo-windows-amd64-$mihomo_tag.zip"
     "mihomo-linux-amd64-$mihomo_tag.gz"
@@ -157,7 +157,7 @@ mho_ui_url="https://github.com/ahaoboy/mho-ui/releases/latest/download/mho-ui.zi
 download "$mho_ui_url" "mho-ui.zip"
 
 # Metacubexd https://github.com/MetaCubeX/metacubexd
-metacubexd_tag="v1.273.1"
+metacubexd_tag="v1.275.2"
 metacubexd_url="https://github.com/MetaCubeX/metacubexd/releases/download/$metacubexd_tag/compressed-dist.tgz"
 download "$metacubexd_url" "metacubexd.tgz"
 
